@@ -1,0 +1,102 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "name": "Erdi",
+      "email": "orunerdi186@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 2,
+      "name": "1",
+      "email": "1",
+      "password": "1"
+    },
+    {
+      "id": 3,
+      "name": "Kenan",
+      "email": "orunerdi186@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "name": "Selim",
+      "email": "selim@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "Selim",
+      "email": "selim@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "kenan",
+      "email": "kenan@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "enes",
+      "email": "enes@gmail.com",
+      "password": "321654",
+      "id": 7
+    },
+    {
+      "name": "selin",
+      "email": "selin@gmail.com",
+      "password": "321654",
+      "id": 8
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "Çay",
+      "piece": "1kg",
+      "price": "120"
+    },
+    {
+      "id": 2,
+      "name": "Kalemlik",
+      "piece": "1 adet",
+      "price": "400"
+    },
+    {
+      "id": 3,
+      "name": "Büyük Gemi",
+      "piece": "1 adet",
+      "price": "400"
+    },
+    {
+      "id": 4,
+      "name": "Yayla Evi",
+      "piece": "1 adet",
+      "price": "400"
+    },
+    {
+      "id": 5,
+      "name": "Küçük Gemi",
+      "piece": "1 adet",
+      "price": "400"
+    },
+    {
+      "id": 6,
+      "name": "Çay Bardağı",
+      "piece": "1 adet",
+      "price": "400"
+    },
+    {
+      "id": 7,
+      "name": "Çay",
+      "piece": "2kg",
+      "price": "220"
+    },
+    {
+      "id": 8,
+      "name": "Çay",
+      "piece": "3kg",
+      "price": "320"
+    }
+  ]
+}
