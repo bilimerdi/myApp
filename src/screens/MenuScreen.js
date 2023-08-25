@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
-import Weather from "../components/Weather";
 
 const MenuScreen = ({ navigation }) => {
   // const name = navigation.getParam("name");
@@ -26,7 +25,11 @@ const MenuScreen = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <Weather></Weather>
+      <View>
+        <TouchableOpacity onPress={() => navigation.navigate("Weather")}>
+          <Text>Hava Durumunu öğren</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

@@ -5,6 +5,7 @@ import ProductScreen from "./src/screens/ProductScreen";
 import MenuScreen from "./src/screens/MenuScreen";
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
+import WeatherScreen from "./src/screens/WeatherScreen";
 
 const navigator = createStackNavigator(
   {
@@ -13,6 +14,7 @@ const navigator = createStackNavigator(
     LogUp: LogUpScreen,
     Product: ProductScreen,
     Menu: MenuScreen,
+    Weather: WeatherScreen,
   },
   {
     initialRouteName: "Menu",
