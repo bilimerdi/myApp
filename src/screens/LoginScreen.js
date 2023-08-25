@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import image from "../../assets/log.png";
 import jsonServer from "../api/jsonServer";
+import MenuScreen from "./MenuScreen";
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -25,6 +26,7 @@ const LoginScreen = ({ navigation }) => {
       console.error("Veri alınamadı:", error);
     }
   };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -35,7 +37,7 @@ const LoginScreen = ({ navigation }) => {
     );
     if (user) {
       Alert.alert("Başarılı", "Giriş başarıyla gerçekleşti!");
-      navigation.navigate("Menu");
+      navigation.navigate("Menu", { name: user.name });
     } else {
       Alert.alert("Başarısız", "Giriş bilgileri hatalı.");
     }

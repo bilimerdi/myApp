@@ -1,10 +1,27 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const MenuScreen = () => {
+const MenuScreen = ({ navigation }) => {
+  const name = navigation.getParam("name");
+
+  const handleBas = () => {
+    console.log(name);
+  };
   return (
-    <View>
-      <Text>menuscreen</Text>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "censter",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <View>
+        <Text>HOŞGELDİN</Text>
+        <TouchableOpacity onPress={handleBas}>
+          <Text>Bas</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
