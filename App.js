@@ -15,7 +15,7 @@ const navigator = createStackNavigator(
     Menu: MenuScreen,
   },
   {
-    initialRouteName: "Main",
+    initialRouteName: "Menu",
     defaultNavigationOptions: {
       title: "RizeApp",
       headerShown: false,
