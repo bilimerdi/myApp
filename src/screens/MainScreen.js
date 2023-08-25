@@ -6,18 +6,27 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import image from "../../assets/main_page.jpg";
-const MainScreen = () => {
+import image from "../../assets/main_page1.png";
+import { StatusBar } from "expo-status-bar";
+import LottieView from "lottie-react-native";
+
+const MainScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ImageBackground source={image} style={styles.image}>
-        <TouchableOpacity>
-          <Text style={styles.text}>Giriş</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.text}>Kayıt Ol</Text>
-        </TouchableOpacity>
+        <View style={styles.frameButton}>
+          <TouchableOpacity
+            style={styles.touchableText}
+            onPress={() => navigation.navigate("Login")}
+          >
+            <Text style={styles.text}>Giriş Yap</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.touchableText}onPress={() => navigation.navigate("LogUp")}>
+            <Text style={styles.text}>Kayıt Ol</Text>
+          </TouchableOpacity>
+        </View>
       </ImageBackground>
+      <StatusBar style="auto"></StatusBar>
     </View>
   );
 };
@@ -25,26 +34,26 @@ const MainScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "column",
   },
   image: {
     flex: 1,
     resizeMode: "cover",
-    justifyContent: "center",
+    justifyContent: "flex-end",
   },
   text: {
     color: "white",
-    fontSize: 42,
-    fontWeight: "bold",
+    fontSize: 30,
     textAlign: "center",
   },
-  textHeader: {
-    color: "white",
-    fontSize: 32,
-    fontWeight: "bold",
-    textAlign: "center",
-    marginTop: 0,
-    marginBottom: 400,
+  frameButton: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 20,
+    paddingBottom: 40,
+  },
+  touchableText: {
+    padding: 10,
   },
 });
 
