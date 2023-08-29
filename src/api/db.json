@@ -47,6 +47,12 @@
       "email": "selin@gmail.com",
       "password": "321654",
       "id": 8
+    },
+    {
+      "name": "3",
+      "email": "3",
+      "password": "3",
+      "id": 9
     }
   ],
   "product": [
@@ -97,6 +103,68 @@
       "name": "Çay",
       "piece": "3kg",
       "price": "320"
+    }
+  ],
+  "places": [
+    {
+      "id": 1,
+      "name": "Rize Kalesi",
+      "description": "Rize Kalesi, sehir merkezinin güneybatısına kurulmuş bir kaledir. İç Kale ve Aşağı Kale olarak iki bölümü vardır. Yoğun yerleşme sebebiyle Aşağı Kale yok olmuştur. Batı tarafından bazı sur parçaları ve kuleleri günümüze gelebilmiştir. ",
+      "image": "https://kinyahotel.com/uploads/rize-kalitesi.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Atatürk Evi Ve Etnografya Müzesi",
+      "description": "Rize Atatürk Evi Müzesi, Rize merkeze bağlı Müftü Mahallesi'nde yer alan, 1920 yılında yapımına başlanan ve 1921 yılında tamamlanan bir yapı üzerine kurulmuş müzedir. 20. yüzyıl Türk mimarisinin özelliklerine göre inşa edilen ve iç sofalı plan tipine sahip olan bina, üç katlı bir konaktır",
+      "image": "https://www.kulturportali.gov.tr/repoKulturPortali/large/25022013/98b6f958-47af-4960-9461-ade0b80a98f9.JPG?format=jpg&quality=50"
+    },
+    {
+      "id": 3,
+      "name": "Pokut Yaylası",
+      "description": "Pokut Yaylası, Rize ilinin, Çamlıhemşin ilçesinde bulunan bir yayladır. Yayla, Çamlıhemşin İlçesi'nin güneyinde, Fırtına deresi ve Hala deresinin oluşturduğu vadiler arasında ve 2032 metre yükseklikte bulunmaktadır. ",
+      "image": "https://www.ayderserender.com/wp-content/uploads/2018/06/pokut-yaylasi-1200x675.jpg.webp"
+    },
+    {
+      "id": 4,
+      "name": "Elevit Yaylası",
+      "description": "Elevit Yaylası, Rize ilinin, Çamlıhemşin ilçesine bağlı bir yayladır. Yörede muhtarlığı bulunan tek yayladır ve 1800 rakıma sahiptir.",
+      "image": "https://organicatour.com/uploads/p/elevit-yaylasi-turu.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Isırlık Tabiat Parkı",
+      "description": "Isırlık tabiat parkı 12 ha’lık bir büyüklüğe sahiptir. İçerisinde birçok endemik bitkiyi barındırmakta olup vatandaşlarımız sosyal ve kültürel açıdan vakit geçirebilecekleri bir yerdir.Isırılık Tabiat Parkı'ndaki inşaat çalışmaları  tamamlanarak  vatandaşlarımızın kullanımına açılmıştır. İçerisinde vatandaşlarımız için hem piknik alanı hemde sosyal tesis hizmeti bulunmaktadır.",
+      "image": "https://rize.ktb.gov.tr/Resim/430530,isirliktabiatparki-2jpg.png?0"
+    },
+    {
+      "id": 6,
+      "name": "Fırtına Deresi",
+      "description": "Fırtına Deresi veya eski adıyla Peruma, Doğu Karadeniz'de yer alan akarsulardan birisi olup, Kaçkar Dağları'nın Karadeniz'e bakan yamaçlarındaki derelerin birleşmesi ile oluşmuştur. Rize Ardeşen'in yaklaşık 2 km batısında Karadeniz'e dökülen Fırtına Deresi, 68 km uzunluğundadır.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/ArchBridgeOverFirtinaDeresi%40Rize-Turkey-1.JPG"
+    },
+    {
+      "id": 7,
+      "name": "Anzer Yaylasi",
+      "description": "Anzer Yaylası, Rize'nin İkizdere ilçesinin 35 km güney batısında kalan bir yayla. Aşağı Anzer ve Yukarı Anzer olmak üzere ikiye ayrılır. Rize il merkezine 54 km mesafededir. Balıyla ünlü olan yayla aynı zamanda önemli bir ekoturizm alanıdır.",
+      "image": "https://www.ridosotel.com.tr/galeri/anzer1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Ayder Yaylası",
+      "description": "Sadece Rize'nin değil Türkiye'nin de ünlü yaylalarından biri olan Ayder Yaylası, Türkiye'nin en yüksek 4. dağı olan Kaçkar Dağları eteklerinde, 1300 metre yükseklikte unutulmaz bir doğa gezisi sunuyor. Ülkemizin turizm olanakları bakımından en gelişmiş yaylalarından olan Ayder Yaylası'nda her bütçeye göre doğa otelleri, bungalovlar, orman köşkleri ve ahşap tasarımlı yayla evleri gibi pek çok konaklama alternatifi bulabilirsiniz.",
+      "image": "https://static.ticimax.cloud/33860/uploads/urunresimleri/buyuk/ayder-yaylasi-3-gece-konaklamali-butik-ee-80e.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Gito Yaylası",
+      "description": "Rize'nin doğal güzellikleri ile ünlü ilçesi Çamlıhemşin’de Çat Vadisi üzerinde yer alan Gito Yaylası, Karadeniz'in en güzel yaylalarından biri olarak görülmeye değer. Deniz seviyesinden yaklaşık 2070 metre yükseklikte uzanan yayla, sislerle kaplı büyüleyici çam ormanı manzaraları ile ünlü.",
+      "image": "https://yenidenyollara.com/wp-content/uploads/2020/07/gito-yaylas%C4%B1-819x1024.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Huser Yaylası",
+      "description": "Rize'nin yaylalar bakımından tam bir cennet olan ilçesi Çamlıhemşin ilçesi sınırlarında, deniz seviyesinden yaklaşık 2328 metre yükseklikte yer alan Huser Yaylası, Türkiye'nin dünya çapında ünlü yayalarından biri. Bulutlarla birleşen dağ eteklerinde tertemiz havada keyifli bir doğa gezisi yapabileceğiniz yaylada karlarla kaplı dağların ve sislerin sardığı Karadeniz ormanlarının panoramik fotoğraflarını çekebilirsiniz.",
+      "image": "https://static.agentis.com.tr/trippters.com/uploads/huser_yaylasi_turu.jpg"
     }
   ]
 }

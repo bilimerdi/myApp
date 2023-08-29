@@ -6,7 +6,7 @@ const ProductScreen = () => {
   const [data, setData] = useState([]);
   const [name, setName] = useState("");
   const [piece, setPiece] = useState("");
-  const [price, usePrice] = useState("");
+  const [price, setPrice] = useState("");
 
   const fetchData = async () => {
     try {

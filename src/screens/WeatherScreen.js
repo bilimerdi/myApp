@@ -9,7 +9,7 @@ const WeatherScreen = () => {
       <ImageBackground
         source={image}
         style={styles.image}
-        imageStyle={{ opacity: 0.9, backgroundColor: "black" }}
+        imageStyle={{ opacity: 0.9, backgroundColor: "gray" }}
       >
         <View style={styles.weather}>
           <Weather></Weather>

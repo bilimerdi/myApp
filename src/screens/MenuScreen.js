@@ -30,6 +30,11 @@ const MenuScreen = ({ navigation }) => {
           <Text>Hava Durumunu öğren</Text>
         </TouchableOpacity>
       </View>
+      <View>
+        <TouchableOpacity onPress={() => navigation.navigate("Places")}>
+          <Text>Gezilecek Yerler</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

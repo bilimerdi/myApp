@@ -21,10 +21,6 @@ const Weather = () => {
     ? (weatherData.main.feels_like - 273.15).toFixed(1)
     : null;
 
-  //   const iconUrl = weatherData
-  //     ? `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`
-  //     : null;
-
   const formatUnixTimestamp = (unixTimestamp) => {
     const date = new Date(unixTimestamp * 1000);
     return date.toLocaleTimeString("tr-TR", {
@@ -47,7 +43,7 @@ const Weather = () => {
             <Text style={styles.circle}>°</Text>
             <Text style={styles.symbol}>C</Text>
           </View>
-          <View>
+          <View style={styles.borderStyle}>
             <View style={styles.details}>
               <Text>Hissedilen Sıcaklık: </Text>
               <Text style={{ marginLeft: 90 }}>{feelsLikeTemp} °</Text>
@@ -90,10 +86,11 @@ const styles = StyleSheet.create({
   clock: {
     marginTop: 0,
     marginBottom: 60,
+    textDecorationStyle: "double",
   },
   temp: {
     fontSize: 80,
-    marginBottom: 60,
+    marginBottom: 50,
   },
   circle: {
     fontSize: 60,
@@ -101,6 +98,12 @@ const styles = StyleSheet.create({
   symbol: {
     fontSize: 80,
     marginLeft: 30,
+  },
+  borderStyle: {
+    backgroundColor: "rgba(255, 255, 255, 0.04)",
+    borderRadius: 10,
+    borderWidth: 1,
+    padding: 18,
   },
   details: {
     flexDirection: "row",
