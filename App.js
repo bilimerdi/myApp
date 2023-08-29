@@ -5,6 +5,7 @@ import ProductScreen from "./src/screens/ProductScreen";
 import MenuScreen from "./src/screens/MenuScreen";
 import WeatherScreen from "./src/screens/WeatherScreen";
 import PlacesScreen from "./src/screens/PlacesScreen";
+import HistoryScreen from "./src/screens/HistoryScreen";
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 
@@ -17,6 +18,7 @@ const navigator = createStackNavigator(
     Menu: MenuScreen,
     Weather: WeatherScreen,
     Places: PlacesScreen,
+    History: HistoryScreen,
   },
   {
     initialRouteName: "Menu",

@@ -35,6 +35,11 @@ const MenuScreen = ({ navigation }) => {
           <Text>Gezilecek Yerler</Text>
         </TouchableOpacity>
       </View>
+      <View>
+        <TouchableOpacity onPress={() => navigation.navigate("History")}>
+          <Text>Rize Tarihi</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
