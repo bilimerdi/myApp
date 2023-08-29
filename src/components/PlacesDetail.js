@@ -5,10 +5,8 @@ import {
   View,
   FlatList,
   Image,
-  ImageBackground,
 } from "react-native";
 import jsonServer from "../api/jsonServer";
-import image from "../../assets/log.png";
 
 const PlacesDetail = () => {
   const [data, setData] = useState([]);
