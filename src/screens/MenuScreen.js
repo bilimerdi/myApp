@@ -40,6 +40,11 @@ const MenuScreen = ({ navigation }) => {
           <Text>Rize Tarihi</Text>
         </TouchableOpacity>
       </View>
+      <View>
+        <TouchableOpacity onPress={() => navigation.navigate("Football")}>
+          <Text>Futbol Fikstür</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
