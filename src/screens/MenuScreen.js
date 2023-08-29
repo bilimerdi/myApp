@@ -17,11 +17,12 @@ const MenuScreen = ({ navigation }) => {
     >
       <View style={{ flexDirection: "row", marginTop: 20 }}>
         <View style={styles.frameName}>
-          <Text style={styles.text}>HOŞGELDİN {name}</Text>
+          <Text>{name}</Text>
+          <Text style={styles.text}>HOŞGELDİN</Text>
         </View>
         <View style={styles.frameButton}>
           <TouchableOpacity onPress={handleLogOut}>
-            <Feather name="log-out" style={styles.button}></Feather>
+            <Feather name="user" style={styles.button}></Feather>
           </TouchableOpacity>
         </View>
       </View>
@@ -58,18 +59,20 @@ const styles = StyleSheet.create({
     margin: 3,
   },
   frameButton: {
-    backgroundColor: "red",
-    padding: 5,
-    borderRadius: 8,
     margin: 3,
+    marginTop: 10,
   },
   text: {
     marginRight: 60,
     fontSize: 20,
   },
   button: {
+    color: "#171515",
+    backgroundColor: "white",
+    padding: 10,
     fontSize: 30,
-    marginTop: 5,
+    width: 50,
+    borderRadius: 50,
   },
 });
 
