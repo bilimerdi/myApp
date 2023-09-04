@@ -9,6 +9,7 @@ import HistoryScreen from "./src/screens/HistoryScreen";
 import FootballScreen from "./src/screens/FootballScreen";
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
+import AboutScreen from "./src/screens/AboutScreen";
 
 const navigator = createStackNavigator(
   {
@@ -21,9 +22,10 @@ const navigator = createStackNavigator(
     Places: PlacesScreen,
     History: HistoryScreen,
     Football: FootballScreen,
+    About: AboutScreen,
   },
   {
-    initialRouteName: "Menu",
+    initialRouteName: "About",
     defaultNavigationOptions: {
       title: "RizeApp",
       headerShown: false,
