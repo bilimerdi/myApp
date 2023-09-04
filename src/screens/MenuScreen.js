@@ -9,8 +9,8 @@ import {
   View,
 } from "react-native";
 import { Feather } from "@expo/vector-icons";
+import ModalDropdown from "react-native-modal-dropdown";
 import fetchLeaguesList from "../api/fetchCollectApiData";
-import MenuWeather from "../components/MenuWeather";
 import image from "../../assets/menu.jpg";
 import image_fut from "../../assets/Çaykur_Rizespor_Logo.png";
 import image_history from "../../assets/rize_history.jpg";
@@ -18,6 +18,21 @@ import image_history from "../../assets/rize_history.jpg";
 const MenuScreen = ({ navigation }) => {
   // const name = navigation.getParam("name");
   const [rizesporInfo, setRizesporInfo] = useState({});
+  const menuItems = ["Çıkış Yap", "Hakkımda"];
+
+  const handleMenuItemClick = (index) => {
+    const menuItem = menuItems[index];
+    switch (menuItem) {
+      case "Çıkış Yap":
+        navigation.navigate("Login");
+        break;
+      case "Hakkımda":
+        navigation.navigate("About");
+        break;
+      default:
+        break;
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,15 +66,17 @@ const MenuScreen = ({ navigation }) => {
             <Text style={styles.text}>HOŞGELDİN</Text>
           </View>
           <View style={styles.frameButton}>
-            <TouchableOpacity onPress={handleLogOut}>
+            <ModalDropdown
+              options={menuItems}
+              onSelect={(index, value) => handleMenuItemClick(index, value)}
+            >
               <Feather name="user" style={styles.button}></Feather>
-            </TouchableOpacity>
+            </ModalDropdown>
           </View>
         </View>
         <ScrollView>
           <View style={styles.borderStyle}>
             <TouchableOpacity onPress={() => navigation.navigate("Weather")}>
-              {/* <MenuWeather></MenuWeather> */}
               <Text>Hava Durumunu öğren</Text>
             </TouchableOpacity>
           </View>
