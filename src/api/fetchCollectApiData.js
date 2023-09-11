@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API_URL =
-  "https://api.collectapi.com/football/league?data.league=super-lig";
+const API_URL = "https://api.collectapi.com/sport/leaguesList";
 const API_KEY = "apikey 7vGIKXC6HSPruQgD7WBRtU:3JcOh9njGMJkRqkMSuJkvO";
 
 const headers = {
@@ -12,6 +11,7 @@ const headers = {
 const fetchLeaguesList = async () => {
   try {
     const response = await axios.get(API_URL, { headers });
+    console.log(response);
     return response.data;
   } catch (error) {
     console.error("Request Error:", error);
