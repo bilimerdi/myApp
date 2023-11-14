@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  FlatList,
-  Image,
-} from "react-native";
+import { StyleSheet, Text, View, FlatList, Image } from "react-native";
 import jsonServer from "../api/jsonServer";
 
 const PlacesDetail = () => {
@@ -34,14 +28,13 @@ const PlacesDetail = () => {
   );
 
   return (
-      <View style={{ flex: 1 }}>
-        <FlatList
-          data={data}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-        />
-      </View>
-
+    <View style={{ flex: 1 }}>
+      <FlatList
+        data={data}
+        renderItem={renderItem}
+        keyExtractor={(item) => item.id}
+      />
+    </View>
   );
 };
 
@@ -50,6 +43,7 @@ const styles = StyleSheet.create({
     padding: 16,
     borderBottomWidth: 1,
     borderBottomColor: "#ccc",
+    backgroundColor: "rgba(255, 255, 255, 0.1)",
   },
   image: {
     width: 200,

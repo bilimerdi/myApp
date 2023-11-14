@@ -39,7 +39,7 @@ const LoginScreen = ({ navigation }) => {
       Alert.alert("Başarılı", "Giriş başarıyla gerçekleşti!");
       navigation.navigate("Menu", { name: user.name });
     } else {
-      Alert.alert("Başarısız", "Giriş bilgileri hatalı.");
+      Alert.alert("Başarısız", "Giriş bilgileri hatalı.Tekrar deneyiniz");
     }
   };
 

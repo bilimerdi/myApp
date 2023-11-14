@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  Text,
-  View,
-  StyleSheet,
-  ImageBackground,
-  TouchableOpacity,
+import {Text,View,StyleSheet,ImageBackground,TouchableOpacity,
 } from "react-native";
 import image from "../../assets/main_page1.png";
 import { StatusBar } from "expo-status-bar";
-import LottieView from "lottie-react-native";
 
 const MainScreen = ({ navigation }) => {
   return (

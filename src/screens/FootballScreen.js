@@ -1,44 +1,32 @@
 import React, { useEffect, useState } from "react";
 import fetchLeaguesList from "../api/fetchCollectApiData";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import FootballDetail from "../components/FootballDetail";
 
 const FootballScreen = () => {
-  const [rizesporInfo, setRizesporInfo] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const leaguesData = await fetchLeaguesList();
-      const rizespor = leaguesData.result.find(
-        (team) => team.team === "Çaykur Rizespor"
-      );
-
-      if (rizespor) {
-        setRizesporInfo(rizespor);
-      }
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <View>
-      <Text>Çaykur Rizespor Bilgileri</Text>
-      {rizesporInfo && (
-        <View>
-          <Text>Takım Adı: {rizesporInfo.team}</Text>
-          <Text>Oynanan Maç: {rizesporInfo.play}</Text>
-          <Text>Galibiyet: {rizesporInfo.win}</Text>
-          <Text>Mağlubiyet: {rizesporInfo.lose}</Text>
-          <Text>Beraberlik: {rizesporInfo.draw}</Text>
-          <Text>Attığı Gol: {rizesporInfo.goalfor}</Text>
-          <Text>Yediği Gol: {rizesporInfo.goalagainst}</Text>
-          <Text>Averaj: {rizesporInfo.goaldistance}</Text>
-          <Text>Puan: {rizesporInfo.point}</Text>
-          <Text>Sıralama: {rizesporInfo.rank}</Text>
-        </View>
-      )}
+      <Text>Lig Tablosu</Text>
+      <View style={styles.header}>
+        <Text>Takım</Text>
+        <Text>OM</Text>
+        <Text>G</Text>
+        <Text>B</Text>
+        <Text>M</Text>
+        <Text>AG</Text>
+        <Text>YG</Text>
+        <Text>A</Text>
+        <Text>P</Text>
+      </View>
+      <FootballDetail></FootballDetail>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  header: {
+    flexDirection: "row",
+  },
+});
 
 export default FootballScreen;

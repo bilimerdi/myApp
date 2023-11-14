@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://api.collectapi.com/sport/leaguesList";
+const API_URL = "https://api.collectapi.com/sport/league?data.league=super-lig";
 const API_KEY = "apikey 7vGIKXC6HSPruQgD7WBRtU:3JcOh9njGMJkRqkMSuJkvO";
 
 const headers = {
